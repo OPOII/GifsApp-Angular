@@ -5,7 +5,8 @@
     <hr class="text-white" />
     <div class="list-group list-reset">
         <a *ngFor="let item of historial" href="#" class="list-group-item list-group-item-action">
-           {{item}}
+           <!--Title case sirve para poder capitalizar las palabras-->
+            {{item | titlecase}}
         </a>
     </div>
 </div>
